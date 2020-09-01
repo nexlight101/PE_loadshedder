@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://localhost/main -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./Document_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./Document_files/popper.min.js.download" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./Document_files/bootstrap.min.js.download" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./Document_files/modernizr.js.download" async=""></script>
+    <link rel="stylesheet" href="./Document_files/jquery-ui.css">
+    
+    <script src="./Document_files/jquery-1.12.4.js.download"></script>
+    <script src="./Document_files/jquery-ui.js.download"></script>
+    <script>
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+    } );
+    </script>
+    <link rel="stylesheet" type="text/css" href="./Document_files/main.css">
+    </head><body><nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="http://localhost/main#">PE Shedder</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/index">Input Page</a>
+                </li>
+            </ul>
+            
+        </div>
+        <a class="nav-link about" href="http://localhost/about">About</a>
+    </nav>
+
+
+
+
+    <div class="container-fluid d-flex w-100 h-100 text-center mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h1 class="head">CSV Editor main page</h1>
+                <p class="exp">Provides editing for csv files</p>
+        </div></header>
+    </div>
+    <div class="table-responsive">
+        <input type="text" name="rc1" id="rc1" class="form-control"><input type="text" name="rc2" id="rc2" class="form-control"><input type="text" name="rc3" id="rc3"><input type="text" name="rc4" id="rc4"><input type="text" name="rc5" id="rc5"><input type="text" name="rc6" id="rc6"><table class="table table-bordered table-sm mb-0">
+            <thead class="thead-dark text-center">
+                
+                <tr><th scope="col">R</th>
+                
+                <th scope="col">1</th>
+                
+                <th scope="col">2</th>
+                
+                <th scope="col">3</th>
+                
+                <th scope="col">4</th>
+                
+                <th scope="col">5</th>
+                
+            </tr></thead>
+            <tbody class="input-group">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tbody>  
+        </table>
+        <div class="text-center mx-auto my-2">
+            <button type="button" class="btn btn-sm btn-dark" onclick="addHtmlTableRow();">Add</button>
+            <button type="button" class="btn btn-sm btn-dark" onclick="editHtmlTbleSelectedRow();">Edit</button>
+            <button type="button" class="btn btn-sm btn-dark" onclick="removeSelectedRow();">Remove</button>
+        </div> 
+    </div>      
+    <div class="table-responsive">
+        <table id="table" class="table table-bordered table-hover table-sm">
+            <thead class="thead-dark text-center">
+                
+                <tr><th scope="col">R</th>
+                
+                <th scope="col">1</th>
+                
+                <th scope="col">2</th>
+                
+                <th scope="col">3</th>
+                
+                <th scope="col">4</th>
+                
+                <th scope="col">5</th>
+                
+            </tr></thead>
+            <tbody>
+                
+                <tr><td scope="row" id="td-dark">1</td><td>Group 1</td><td>Motherwell North</td><td>Motherwell North of Addo Rd</td><td>Motherwell NU1 -12</td><td>Tjoksville</td></tr>
+                
+                <tr><td scope="row" id="td-dark">2</td><td>Group 2</td><td>7de Laan</td><td>Aspen Heights</td><td>Booysens Park</td><td>Chatty</td></tr>
+                
+                <tr><td scope="row" id="td-dark">3</td><td>Group 3</td><td>Arcadia</td><td>Bethelsdorp Village</td><td>Buffelsfontein Old Age Home</td><td>Buffelsfontein Rd</td></tr>
+                
+                <tr><td scope="row" id="td-dark">4</td><td>Group 4</td><td>Gerald Smith</td><td>Kwanobuhle</td><td>Rocklands lines S, SE, SW</td><td>Rosedale</td></tr>
+                
+                <tr><td scope="row" id="td-dark">5</td><td>Group 5</td><td>EP Command</td><td>Forest Hill</td><td>Humewood</td><td>South End</td></tr>
+                
+            </tbody>   
+        </table>
+    </div>
+    <script>
+       
+        var rIndex,
+            table = document.getElementById('table');
+        function selectedRowToInput(){
+            for(var i = 1; i < table.rows.length; i++){
+                table.rows[i].onclick = function(){
+                    rIndex = this.rowIndex;
+                    
+                    document.getElementById('rc1').value = this.cells[ 0 ].innerHTML;
+                    
+                    document.getElementById('rc2').value = this.cells[ 1 ].innerHTML;
+                    
+                    document.getElementById('rc3').value = this.cells[ 2 ].innerHTML;
+                    
+                    document.getElementById('rc4').value = this.cells[ 3 ].innerHTML;
+                    
+                    document.getElementById('rc5').value = this.cells[ 4 ].innerHTML;
+                    
+                    document.getElementById('rc6').value = this.cells[ 5 ].innerHTML;
+                    
+                };
+            }
+        }
+        selectedRowToInput();
+    </script>
+
+
+
+<div class="text-center">
+    <span class="trademark"> <img src="./Document_files/trademark_icon.png" alt="tm"> Go CSV 2020</span>
+</div>
+
+
+
+
+
+
+</body></html>

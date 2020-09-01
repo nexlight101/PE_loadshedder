@@ -1,0 +1,313 @@
+
+.containerS {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.containerH {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    color: rgb(252, 159, 53);
+    background-color: black;
+    
+}
+.bg{
+    background: url("candles.jpg") no-repeat center center fixed;
+    background-image: url("candles.jpg");
+    /* Full height */
+    /* height: 100vh; */
+    width: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    /* background-size: cover; */
+}
+.in{
+    background: url("flame.gif") no-repeat center center fixed;
+    background-image: url("flame.gif");
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    color: black;
+    font-weight: bold;
+}
+
+.sc{
+    background: url("switch.jpg") no-repeat center center fixed;
+    background-image: url("switch.jpg");
+    width: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+    font-weight: bold;
+}
+.ab{
+    background: url("about.gif") no-repeat center center fixed;
+    background-image: url("about.gif");
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+#tcolor {
+ color: rgb(252, 159, 53);
+ background-color: rgba(255, 255, 255, 0);
+ border: none;
+ font-size: 3rem;
+}
+#bcolor {
+    color: rgb(252, 159, 53);
+    border: 2px solid rgb(252, 159, 53);
+    opacity: 0.6;
+    transition: color .15s ease-in-out,black .15s ease-in-out,silver .15s ease-in-out,box-shadow .15s ease-in-out;
+   }
+
+#tcolor h5 p{
+    color: gray;
+   }
+
+#datepicker{
+    background-color: #232d35;
+    color: white;
+}
+#indexID{
+    color: rgb(252, 159, 53);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+}
+
+.containerS div{
+    padding: 10px;
+}
+
+.containerS1 {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.containerS {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gif_block {
+display: flex;
+flex-direction: column;
+}
+.cat_block {
+    flex: 1;
+}
+
+.schedules_block{
+flex: 1.05;
+font-size: x-large;
+}
+
+
+.ba{
+    color: white;
+    }
+
+.date_message {
+    flex: 3;
+    background-color: #efc765;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+}
+
+.area_message {
+    background-color: #efc765;
+    color: black;
+    font-size: x-large;
+    margin: auto;
+}
+.cat {
+    font-style: italic;
+}
+.catgif{
+    border-style: inset;
+    border-width: thick;
+}
+
+.stage {
+    font-size: xx-large; 
+}
+.exp {
+    font-style: italic;
+}
+.head {
+    color: rgb(252, 159, 53);
+    border: none;
+    transition: color .15s ease-in-out,black .15s ease-in-out,silver .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.trademark {
+    font-size: smaller; 
+    color: rgb(252, 159, 53); 
+}
+
+.tmdiv {
+        position: fixed;
+        padding: 10px 10px 0px 10px; 
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        align-self: flex-end;
+} 
+
+.tmdiv1 {
+    flex: 1;
+    padding: 10px 10px 0px 10px; 
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    align-self: flex-end;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+.l_foot  {
+    flex: 1;
+    align-self: flex-end;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color:rgba(158, 158, 158, .25);
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(252, 159, 53); 
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(252, 159, 53); 
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgb(252, 159, 53);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 159, 53, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+.custom-toggler .navbar-toggler {
+    border-color: rgb(252, 159, 53);
+  }
+
+.btn-secondary{
+    background-color: #232d35;
+}
+.about{
+    align-items: flex-end;
+    color: rgb(252, 159, 53);
+}
+
+.about-txt p a{
+    color: rgb(252, 159, 53);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: initial;
+}
+
+/* media queries */
+@media (max-width: 690px) {
+    .tmdiv {
+        flex: 1;
+        position: inherit;
+        padding: 10px 10px 0px 10px; 
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        align-self: flex-end;
+    }
+}
+@media(max-width:841px){
+    .containerS {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .containerS1 {
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .gif_block {
+        display: flex;
+        flex-direction: column;
+        }
+        .cat_block {
+            flex: 1;
+        }
+        
+        .schedules_block{
+        flex: 1.05;
+        font-size: x-large;
+        }
+        
+}
+
+@media(max-width:529px){
+    .containerS1 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:924px){
+    .in {
+        background-size: contain;
+        background-color: #0b0800;
+    }
+}

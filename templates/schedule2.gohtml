@@ -1,0 +1,51 @@
+{{template "header" .BGround}}
+<body class="sc" height:100vh>
+{{/* <div class="text-center" id="scheduleID"> */}}
+    <div class="containerH">
+        <div class="area_message">Schedules for {{.Area}}</div>
+        <div class="date_message">(for the selected date {{.Date}})</div>
+    </div>
+    <div class="containerS"> 
+        <div class="schedules_block">
+            <div>
+                <h1>{{.Group1}}</h1>
+                {{range .Schedules1}}
+                    <h2>{{.Stage}}</h2>
+                        {{range .Times}}
+                            <ul class="ba">
+                                <li>
+                                    <p> {{.}}</p>
+                                </li>   
+                            </ul>
+                        {{end}}
+                {{end}}
+            </div>
+        </div>                
+{{/* ##################################################################################### */}}
+        <div class="schedules_block">
+            <div>
+                <h1>{{.Group2}}</h1>
+                {{range $index, $element := .Schedules2}}
+                    <h2>{{.Stage}}</h2>
+                    {{range .Times}}
+                    <ul class="ba">
+                        <li>
+                            <p> {{.}}</p>
+                        </li>   
+                    </ul>
+                    {{end}}
+                {{end}}
+            </div>
+        </div>
+        <div class="gif_block mb-2">
+            <div class="cat_block">
+                <p class="cat">Ever visualized your municipality as a cat?</p>
+                <p class="cat">Sorry for raining on your party.</p>
+                <img class="catgif"src="/public/stylesheets/fxVw.gif" alt="bcandle">
+            </div>
+            <div class="tmdiv1">
+                <span class="trademark"> <img src="/public/stylesheets/trademark_icon.PNG" alt="tm"> Go Port Elizabeth loadshedding Web Scheduler 2020</span>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,35 @@
+{{template "header" .BGround}}
+<body class="sc" height:100vh>
+{{/* <div class="text-center" id="scheduleID"> */}}
+    <div class="containerH">
+        <div class="area_message">Schedules for {{.Area}}</div>
+        <div class="date_message">(for the selected date {{.Date}})</div>
+    </div>
+    <div class="containerS1"> 
+        <div class="schedules_block">
+            <div>
+                {{range .Schedules1}}
+                    <h1>{{.Stage}}</h1>
+                        {{range .Times}}
+                            <ul class="ba">
+                                <li>
+                                    <p> {{.}}</p>
+                                </li>   
+                            </ul>
+                        {{end}}
+                {{end}}
+            </div>
+        </div>    
+        <div class="gif_block mb-2">
+            <div class="cat_block">
+                <p class="cat">Ever visualized your municipality as a cat?</p>
+                <p class="cat">Sorry for raining on your party.</p>
+                <img class="catgif"src="/public/stylesheets/fxVw.gif" alt="bcandle">
+            </div>
+            <div class="tmdiv1">
+                <span class="trademark"> <img src="/public/stylesheets/trademark_icon.PNG" alt="tm"> Go Port Elizabeth loadshedding Web Scheduler 2020</span>
+            </div>
+        </div>
+    </div>
+</body>
+{{/* {{template "footer"}} */}}

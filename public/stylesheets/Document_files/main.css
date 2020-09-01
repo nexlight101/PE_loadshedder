@@ -1,0 +1,24 @@
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+
+tr{
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+/* tr:hover{
+  background-color: rgb(82, 80, 80);
+} */
+
+#td-dark {
+  background-color: #343a40;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
